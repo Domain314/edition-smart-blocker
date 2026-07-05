@@ -1,11 +1,11 @@
 {
 	"manifest_version": 3,
-	"name": "Edition Smart Blocker Offline",
+	"name": "Edition Smart Marker",
 	"version": "0.0.1",
-	"description": "Blockiert bestimmte Elemente auf der Website derStandard.at.",
+	"description": "Markiert bestimmte Elemente auf der Website derStandard.at.",
 	"browser_specific_settings": {
 		"gecko": {
-			"id": "edition-smart-blocker-offline@domain69.dev",
+			"id": "edition-smart-marker@domain314.dev",
 			"strict_min_version": "109.0",
 			"data_collection_permissions": {
 				"required": [
