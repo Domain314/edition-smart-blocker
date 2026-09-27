@@ -1,0 +1,81 @@
+#piano-article-video-container {
+	display: none !important;
+}
+
+.dsav-dailymotion-link {
+	position: relative;
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	background: #161616;
+	color: #fff;
+	text-decoration: none;
+}
+
+.dsav-dailymotion-thumbnail {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.dsav-dailymotion-play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 68px;
+	height: 68px;
+	border: 2px solid rgb(255 255 255 / 90%);
+	border-radius: 50%;
+	background: rgb(0 0 0 / 72%);
+	box-shadow: 0 2px 12px rgb(0 0 0 / 35%);
+	transform: translate(-50%, -50%);
+}
+
+.dsav-dailymotion-play::after {
+	position: absolute;
+	top: 50%;
+	left: 53%;
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-left: 19px solid #fff;
+	content: "";
+	transform: translate(-42%, -50%);
+}
+
+.dsav-dailymotion-label {
+	position: absolute;
+	right: 12px;
+	bottom: 12px;
+	padding: 7px 10px;
+	border-radius: 4px;
+	background: rgb(0 0 0 / 78%);
+	color: #fff;
+	font: 600 14px/1.25 system-ui, sans-serif;
+}
+
+.dsav-dailymotion-link:hover .dsav-dailymotion-play,
+.dsav-dailymotion-link:focus-visible .dsav-dailymotion-play {
+	background: #e00085;
+}
+
+.dsav-dailymotion-link:focus-visible {
+	outline: 3px solid #e00085;
+	outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+	.dsav-dailymotion-play {
+		width: 54px;
+		height: 54px;
+	}
+
+	.dsav-dailymotion-label {
+		right: 8px;
+		bottom: 8px;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,13 @@
+:root { color-scheme: light dark; font: 14px/1.4 system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 250px; color: #eef1f8; background: #101524; }
+main { padding: 14px; }
+.brand { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; }
+.brand img { width: 34px; height: 34px; }
+.brand strong, .brand span { display: block; }
+.brand span { margin-top: 1px; color: #9ca7bd; font-size: 12px; }
+button { width: 100%; border: 1px solid #47516a; border-radius: 9px; padding: 10px 12px; color: #fff; background: #212a40; font: inherit; font-weight: 650; text-align: left; cursor: pointer; }
+button:hover { border-color: #7c5cff; background: #29334d; }
+button span { margin-right: 8px; color: #7ee7d2; font-size: 18px; }
+#status { min-height: 0; margin: 10px 2px 0; color: #ffb4a9; font-size: 12px; }
+#status:empty { display: none; }

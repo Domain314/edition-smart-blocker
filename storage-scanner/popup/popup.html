@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storage Scanner</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <div class="brand">
+        <img src="../icons/icon.svg" alt="">
+        <div>
+          <strong>Storage Scanner</strong>
+          <span>Inspect this website</span>
+        </div>
+      </div>
+      <button id="scan" type="button">
+        <span aria-hidden="true">⌕</span>
+        Scan storage
+      </button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+{
+	"manifest_version": 2,
+	"name": "derStandard Autoplay Stopper",
+	"version": "0.0.4",
+	"description": "Stoppt Dailymotion-Autoplay und entfernt den Video-Empfehlungsplayer auf derStandard.at.",
+	"icons": {
+		"48": "icon.svg",
+		"96": "icon.svg"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "derstandard-autoplay-blocker@domain69.dev",
+			"strict_min_version": "142.0",
+			"data_collection_permissions": {
+				"required": [
+					"none"
+				]
+			}
+		}
+	},
+	"permissions": [
+		"https://derstandard.at/*",
+		"https://www.derstandard.at/*",
+		"https://buy.tinypass.com/checkout/template/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://derstandard.at/*",
+				"https://www.derstandard.at/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"css": [
+				"content.css"
+			],
+			"run_at": "document_start"
+		},
+		{
+			"matches": [
+				"https://buy.tinypass.com/checkout/template/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"css": [
+				"content.css"
+			],
+			"all_frames": true,
+			"run_at": "document_start"
+		}
+	],
+	"content_security_policy": "default-src 'self'; object-src 'none'"
+}
